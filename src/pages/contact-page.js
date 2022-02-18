@@ -16,6 +16,8 @@ const contactPage = {
   },
   afterRender(){
     Header.afterRender()
+    Contact.afterRender()
   }
+  
 };
 export default contactPage;

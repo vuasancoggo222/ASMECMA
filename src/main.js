@@ -2,19 +2,26 @@ import "../style.css";
 import Navigo from "navigo";
 import homePage from "./pages/home";
 import contactPage from "./pages/contact-page";
+import productsPage from "./pages/products-page";
 import aboutPage from "./pages/about-page"
 import signinPage from "./authentication/signin"
 import signupPage from "./authentication/signup";
-import DetailPage from "./pages/detail-page"
+import DetailPage from "./pages/detail-product-page"
+import DetailNewsPage from "./pages/detail-news-page"
 import AdminDashboard from "./admin/dashboard"
 import productsTable from "./admin/products/products-table";
-import newsTable from "./admin/news-table";
-import contactTable from "./admin/contact-table";
-import usersTable from "./admin/users-table";
+import newsTable from "./admin/news/news-table";
+import contactTable from "./admin/contact/contact-table";
+import usersTable from "./admin/users/users-table";
 import ordersTable from "./admin/orders-table";
+import categoryTable from "./admin/category/category-table";
 import productsAdd from "./admin/products/products-add"
+import NewsAdd from "./admin/news/news-add"
+import newsEdit from "./admin/news/news-edit";
 import productsEdit from "./admin/products/products-edit"
-import Search from "./components/search";
+import searchPage from "./pages/search-page";
+import categoryAdd from "./admin/category/category-add"
+import categoryEdit from "./admin/category/category-edit";
 const router = new Navigo("/", { linksSelector: "a" });
 const print = async (content, id) => {
   document.getElementById("app").innerHTML = await content.render(id);
@@ -43,6 +50,9 @@ router.on({
   "contact-page":() => {
     print(contactPage);
   },
+  "products-page":() => {
+    print(productsPage);
+  },
   "about-page":() => {
     print(aboutPage);
   },
@@ -54,6 +64,9 @@ router.on({
   },
   "detail-page/:id":(value) => {
     print(DetailPage,value.data.id);
+  },
+  "detail-news-page/:id":(value) => {
+    print(DetailNewsPage,value.data.id);
   },
   "admin/dashboard":() => {
     print(AdminDashboard)
@@ -70,17 +83,32 @@ router.on({
     "admin/users-table":() => {
       print(usersTable)
       },
+      "admin/category-table":() => {
+        print(categoryTable)
+        },
       "admin/orders-table":() => {
         print(ordersTable)
         },
         "admin/products-table/add":() => {
           print(productsAdd)
         },
+        "/admin/news-table/add":() => {
+          print(NewsAdd)
+        },
+        "/admin/category-table/add":() => {
+          print(categoryAdd)
+        },
         "admin/products-table/:id/edit":({data}) => {
           print(productsEdit,data.id)
         },
-        "products-page/search":()=>{
-          print(Search)
+        "admin/category-table/:id/edit":({data}) => {
+          print(categoryEdit,data.id)
+        },
+        "admin/news-table/:id/edit":({data}) => {
+          print(newsEdit,data.id)
+        },
+        "/search":()=>{
+          print(searchPage)
         }
 });
 router.resolve();

@@ -1,3 +1,6 @@
+import { add } from "../api/contact-api"
+import toastr from "toastr"
+
 const Contact = {
     render(){
         return /*html*/`
@@ -8,10 +11,11 @@ const Contact = {
     <div class="contact-form">
     <div class="w-full md:w-96 md:max-w-full mx-auto mt-[25px] mb-5 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-md">
   <div class="p-6 border border-gray-300 sm:rounded-md">
-    <form method="POST" action="">
+    <form method="POST" action="" id="contactform">
       <label class="block mb-6">
         <span class="text-gray-800">Họ và tên</span>
         <input
+        id="contactname"
           type="text"
           name="name"
           class="
@@ -26,12 +30,14 @@ const Contact = {
             focus:ring-indigo-200
             focus:ring-opacity-50
           "
+
           
         />
       </label>
       <label class="block mb-6">
-        <span class="text-gray-800">Địa chỉ Email</span>
+        <span class="text-gray-800">Email</span>
         <input
+        id="contactemail"
           name="email"
           type="email"
           class="
@@ -50,9 +56,56 @@ const Contact = {
           required
         />
       </label>
+      </label>
+      <label class="block mb-6">
+        <span class="text-gray-800">Địa Chỉ</span>
+        <input
+        id="contactaddress"
+          name="text"
+          type="text"
+          class="
+            block
+            w-full
+            mt-1
+            border-gray-300
+            rounded-md
+            shadow-sm
+            focus:border-indigo-300
+            focus:ring
+            focus:ring-indigo-200
+            focus:ring-opacity-50
+          "
+         
+      
+        />
+      </label>
+      </label>
+      <label class="block mb-6">
+        <span class="text-gray-800">Số điện thoại</span>
+        <input
+        id="contactphone"
+
+          type="text"
+          class="
+            block
+            w-full
+            mt-1
+            border-gray-300
+            rounded-md
+            shadow-sm
+            focus:border-indigo-300
+            focus:ring
+            focus:ring-indigo-200
+            focus:ring-opacity-50
+          "
+         
+        
+        />
+      </label>
       <label class="block mb-6">
         <span class="text-gray-800">Nội dung</span>
         <textarea
+        id="contactcontent"
           name="message"
           class="
             block
@@ -72,7 +125,6 @@ const Contact = {
       </label>
       <div class="mb-6">
         <button
-          type="submit"
           class="
             h-10
             px-5
@@ -100,5 +152,27 @@ const Contact = {
     </div>
         `
     },
+    afterRender(){
+    const contactName = document.querySelector('#contactname');
+    const contactEmail = document.querySelector('#contactemail');
+    const contactPhone = document.querySelector('#contactphone');
+    const contactContent = document.querySelector('#contactcontent');
+    const contactAddress = document.querySelector('#contactaddress');
+    const form = document.querySelector('#contactform')
+    form.addEventListener('submit',(e)=>{
+      e.preventDefault();
+      add({
+        name : contactName.value,
+        email : contactEmail.value,
+        address : contactAddress.value,
+        phonenumber: contactPhone.value,
+        content: contactContent.value
+      })
+      .then((result) => console.log(result.data))
+      .then(toastr.success('Cảm ơn bạn đã liên hệ chúng tôi,chúng tôi sẽ phản hồi cho bạn sớm nhất có thể !!',{timeOut:3000}))
+      .then(window.location.href="/")
+       .catch((error) => console.log(error));
+    })
+    }
 }
 export default Contact

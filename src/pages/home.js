@@ -4,6 +4,7 @@ import Banner from "../components/banner";
 import Category from "../components/category";
 import Products from "../components/products";
 import Footer from "../components/footer";
+import News from "../components/news";
 const homePage = {
   async render() {
     return /*html*/ `
@@ -12,7 +13,7 @@ const homePage = {
     <div class="container mx-auto">
           ${Banner.render()}
           ${ await Products.render()}
-          
+          ${ await News.render()}
       </div>
           ${Footer.render()}  
       

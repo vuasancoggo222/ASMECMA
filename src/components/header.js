@@ -10,7 +10,7 @@ const Header ={
       <form action="" class="ml-[35px]" id="form-search">
         <input type="text" id="search" class="w-[650px] h-[40px] mr-[5px]" />
         <button onclick="" class="w-[120px] h-[41px] bg-[#0E64BC] text-white shadow-blue-500/50">
-          <i class="fas fa-search pr-3"></i>Search
+        <a href="/search">Search</a>
         </button>
       </form>
       <form action="" class="ml-[30px]">
@@ -34,7 +34,7 @@ const Header ={
     `
     },
     afterRender(){
-      const searchValue = document.querySelector('#search')
+
     const user = JSON.parse(localStorage.getItem('user'))
     if(user){
    const auth = document.getElementById('auth')
@@ -48,14 +48,6 @@ const Header ={
     logout.addEventListener('click', function(){
       localStorage.removeItem('user');
   })
-
-    const formSearch = document.getElementById('form-search')
-   formSearch.addEventListener("submit",  async (e)=>{
-     e.preventDefault()
-     const {data} = await search(searchValue.value)
-     console.log(data);
-     document.location.href="/products-page/search"
-    })
     },
 }
 export default Header

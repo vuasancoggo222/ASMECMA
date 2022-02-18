@@ -5,11 +5,11 @@ export const getAll = () => {
     return instance.get(url);
 }
 
-export const get = (id) => {
-    const url = `/contact/${id}`;
-    return instance.get(url);
-}
-export const add = (post) => {
+export const add = (contact) => {
     const url =`/contact`;
-    return instance.post(url, post);
+    return instance.post(url, contact);
+}
+export const remove = (id) => {
+    const url =`/contact/${id}`
+    return instance.delete(url)
 }

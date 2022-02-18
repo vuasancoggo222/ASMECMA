@@ -10,13 +10,13 @@ const Navigation ={
             <a href="/products-page">Sản Phẩm</a>
           </li>
           <li class="inline-block text-base px-[30px] text-[#38383D] font-normal leading-4 font-mono">
-            <a href="news-page">Tin Tức</a>
+            <a href="/news-page">Tin Tức</a>
           </li>
           <li class="inline-block text-base px-[30px] text-[#38383D] font-normal leading-4 font-mono">
-            <a href="contact-page">Liên Hệ</a>
+            <a href="/contact-page">Liên Hệ</a>
           </li>
           <li class="inline-block text-base px-[30px] text-[#38383D] font-normal leading-4 font-mono">
-            <a href="about-page">Về Chúng Tôi</a>
+            <a href="/about-page">Về Chúng Tôi</a>
           </li>
           <li class="inline-block text-base px-[30px] text-[#38383D] font-normal leading-4 font-mono">
             <a href="/admin/dashboard">Trang Quản Trị</a>

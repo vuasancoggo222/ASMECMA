@@ -22,3 +22,11 @@ export const signup = (user) => {
     const url = "/signup";
     return instance.post(url, user);
   };
+  export const remove = (id) => {
+    const url =`/users/${id}`
+    return instance.delete(url)
+} 
+export const update = (user) => {
+    const url = `/users/${user.id}`;
+    return instance.patch(url,user);
+}

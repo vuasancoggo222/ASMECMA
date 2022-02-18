@@ -1,9 +1,12 @@
 import instance from "./instance";
 export const getAll = () => {
-    const url = "/products";
+    const url = "/products?_expand=cate";
     return instance.get(url);
 }
-
+export const get10 = () => {
+    const url = "/products?_start=0&_limit=10";
+    return instance.get(url);
+}
 export const get = (id) => {
     const url = `/products/${id}`;
     return instance.get(url);

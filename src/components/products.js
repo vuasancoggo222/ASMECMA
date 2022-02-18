@@ -1,7 +1,8 @@
-import { getAll } from "../api/products-api";
+import { get10 } from "../api/products-api";
+import { numberFormat } from "../components/price-format";
 const Products = {
   async render() {
-    const { data } = await getAll();
+    const { data } = await get10();
 
     return /*html*/ `
         <div class="products bg-white w-[1250px] mx-auto drop-shadow-lg hover:drop-shadow-xl mt-[25px]">
@@ -14,7 +15,7 @@ const Products = {
                 src="${product.image}"
                 alt="" /></a>
             <a href="/detail-page/${product.id}" class="text-black text-[14.5px] italic absolute left-4" href="">${product.name}</a>
-            <a href="/detail-page/${product.id}" class="text-white text-[16px] font-medium text-red-600 absolute left-4 bottom-2" href="">${product.price}</a>
+            <a href="/detail-page/${product.id}" class="text-white text-[16px] font-medium text-red-600 absolute left-4 bottom-2" href="">${numberFormat.format(product.price)}</a>
           </div>`).join("")}
          
         </div>

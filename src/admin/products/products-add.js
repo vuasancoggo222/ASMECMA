@@ -1,9 +1,11 @@
 import axios from "axios";
 import Swal from 'sweetalert2'
 import { add } from "../../api/products-api"
-
+import { getAll } from "../../api/category-api"
 const productsAdd = {
-    render() {
+  
+     async render() {
+      const { data } = await getAll()
         return /*html*/ `
 <div>
   <div class="md:grid md:grid-cols-3 md:gap-6">
@@ -35,7 +37,16 @@ const productsAdd = {
                 </div>
               </div>
             </div>
-
+            <div class="col-span-6 sm:col-span-3 my-5">
+            <label for="select-category" class="block text-sm font-medium text-gray-700">Chọn danh mục muốn thêm</label>
+              <select name="select-category" id="select-category" class="mt-1 py-2 px-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                ${data.map((category, index) => {
+return /*html*/ `
+                    <option value="${category.id}">${category.name}</option>
+                  `
+})}
+              </select>
+          </div>
             <div>
               <label for="about" class="block text-sm font-medium text-gray-700">
                Description
@@ -116,6 +127,7 @@ const productsAdd = {
                         name: document.querySelector("#product-name").value,
                         price: document.querySelector("#product-price").value,
                         image: res.data.secure_url,
+                        cateId : document.querySelector("#select-category").value,
                         description: document.querySelector("#product-description").value,
                     })
                         .then((result) => console.log(result.data))

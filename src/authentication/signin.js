@@ -1,4 +1,6 @@
 import { signin ,signup } from "../api/users-api";
+import toastr from "toastr";
+import "toastr/build/toastr.min.css";
 const SigninPage ={
     render(){
         return /* html */`
@@ -75,13 +77,16 @@ const SigninPage ={
               password: document.querySelector("#password").value,
           });
           localStorage.setItem('user', JSON.stringify(data.user))
+          toastr.success("Đăng nhập thành công")
           if(data.user.isAdmin == true){
               document.location.href="/admin/dashboard"
           } else {
               document.location.href="/"
           }
+  
         } catch (error) {
             console.log(error.response.data)
+            toastr.error(error.response.data)
         }
         
       });
