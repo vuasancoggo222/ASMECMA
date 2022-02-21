@@ -22,6 +22,8 @@ import productsEdit from "./admin/products/products-edit"
 import searchPage from "./pages/search-page";
 import categoryAdd from "./admin/category/category-add"
 import categoryEdit from "./admin/category/category-edit";
+import NewsPage from "./pages/news-page"
+import CartPage from "./pages/cart";
 const router = new Navigo("/", { linksSelector: "a" });
 const print = async (content, id) => {
   document.getElementById("app").innerHTML = await content.render(id);
@@ -52,6 +54,9 @@ router.on({
   },
   "products-page":() => {
     print(productsPage);
+  },
+  "news-page":() => {
+    print(NewsPage);
   },
   "about-page":() => {
     print(aboutPage);
@@ -109,6 +114,9 @@ router.on({
         },
         "/search":()=>{
           print(searchPage)
+        },
+        "/cart":()=>{
+          print(CartPage)
         }
 });
 router.resolve();

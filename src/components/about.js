@@ -1,9 +1,12 @@
 const About ={
     render(){
         return/*html*/`
-        <div class="ml-[5px] mt-5 text-blue-500 font-semibold text-lg">
-    <a href="/">Trang Chủ > <a href="/about-page">Về Chúng Tôi</a></a>
-    </div>
+        <div class="flex flex-wrap w-full mb-4 p-4">
+        <div class="w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-4xl text-5xl font-medium font-bold title-font mb-2 text-gray-900">About</h1>
+          <div class="h-1 w-36 bg-indigo-500 rounded"></div>
+        </div>
+      </div>
         <div class="introduce-tiki ">
         <h1 class="text-[#222222] mt-3 mb-3 text-[30px] font-bold leading-[40px] ">Giới thiệu về Tiki</h1>
       <p class="mb-5">

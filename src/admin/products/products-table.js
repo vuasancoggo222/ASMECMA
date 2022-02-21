@@ -34,7 +34,7 @@ const productsTable = {
                                 <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
                                    Danh mục
                                 </th>
-                               <th scope="col" colspan="2" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                               <th scope="col" colspan="2" class=" text-center py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
                                Chức năng
                            </th>
                             </tr>

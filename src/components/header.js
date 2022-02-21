@@ -26,8 +26,8 @@ const Header ={
       </div>
       </form>
       <div class="mr-[25px]">
-        <a href="" class="text-2xl text-white ml-3 mr-1"><i class="fas fa-shopping-cart"></i></a>
-        <a href="" class="text-white text-sm">Giỏ hàng</a>
+        <a href="/cart" class="text-2xl text-white ml-3 mr-1"><i class="fas fa-shopping-cart"></i></a>
+        <a href="/cart" class="text-white text-sm">Giỏ hàng</a>
       </div>
     </div>
   </header>

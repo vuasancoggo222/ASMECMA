@@ -31,3 +31,11 @@ export const search = (searchValue) => {
     const url = `/products?q=${searchValue}`
     return instance.get(url);
 }
+export const getPage1 = (currentPage) => {
+    const url = `/products?_page=1&_limit=6`
+    return instance.get(url) 
+}
+export const getbyPage = (currentPage) => {
+    const url = `/products?_page=${currentPage}&_limit=6`
+    return instance.get(url) 
+}

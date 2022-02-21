@@ -4,9 +4,12 @@ import toastr from "toastr"
 const Contact = {
     render(){
         return /*html*/`
-        <div class="ml-[165px] mt-5 text-blue-500 font-semibold text-lg">
-    <a href="/">Trang Chủ > <a href="/contact-page">Liên Hệ</a></a>
-    </div>
+        <div class="flex flex-wrap w-full mb-4 p-4">
+        <div class="w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-4xl text-5xl font-medium font-bold title-font mb-2 text-gray-900">Contact</h1>
+          <div class="h-1 w-36 bg-indigo-500 rounded"></div>
+        </div>
+      </div>
     <div class="grid grid-cols-2">
     <div class="contact-form">
     <div class="w-full md:w-96 md:max-w-full mx-auto mt-[25px] mb-5 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-md">
