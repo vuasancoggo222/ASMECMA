@@ -12,8 +12,7 @@ const DetailPage = {
         ${Header.render()}
         ${Navigation.render()}
         <div class="container mx-auto">
-        <img src="${data.image}">
-        <h1>${data.name}</h1>
+        <img src="${data.image}">        <h1>${data.name}</h1>
         <h1>${data.price}</h1>
         <h1>${data.description}</h1>
         <input type="number" id="inputValue" class="border border-black" value="1" />
