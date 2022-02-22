@@ -157,40 +157,172 @@
       "address": "Việt Nam",
       "isAdmin": true,
       "id": 2
+    },
+    {
+      "email": "database35@gmail.com",
+      "password": "$2a$10$LzDWXRyGntHG2S7QU2woj.inktXg/sI3QkFL1j8nI8y1mfZI/pe8y",
+      "name": "Namn",
+      "address": "Việt Nam",
+      "isAdmin": false,
+      "id": 3
     }
   ],
   "orders": [
     {
-      "createdAt": "2022-02-09T15:51:19.094Z",
-      "name": "Emanuel Lynch",
-      "cart": [],
-      "phoneNumber": "(268) 261-7417 x858",
-      "address": "74082 Yost Roads",
-      "id": "1"
+      "name": "Lê Vũ",
+      "phonenumber": "0384765490",
+      "address": "tuyen quang",
+      "email": "levu@gmail.com",
+      "cart": [
+        {
+          "id": "An8AbGm",
+          "name": "Quần jogger nam túi hộp chất kaki ",
+          "price": "149000",
+          "cateId": "6w41b5J",
+          "image": "https://res.cloudinary.com/ecma/image/upload/v1645192271/pjxj0et153tpafxulctr.jpg",
+          "description": "Quần đũi nam form Slimfif hot 2020 madein Việt Nam\n\nChất liệu: Vải đũi lụa co giãn, mặc mát và thoáng.\n\n- Thiết kế: cạp pha chun có khuy cài co giãn tốt thoải mái khi vận động có đỉa để đeo thắt lưng,2 túi trước,1 túi sau, ống xuông đơn giản năng động.\n\n- Chất vải đũi nhẹ,thoáng mát,dễ giặt,nhanh khô,bền màu\n\n- Kiểu dáng: Form slimfit ôm gọn mặc đứng dáng, khỏe khoắn, mặc lên form, dễ phối đồ.\n\n- Màu sắc: Đen,Chì,Xanh Than,Xanh Rêu,Ghi Sáng\n\n- Size: M - 3XL từ(46 - 88kg)\n\nM từ 46 - 56kg\n\nL 57 - 64kg\n\nXL 65 - 72kg\n\n2XL 73 - 80kg\n\n3XL 81 - 88kg\n\nShop cam kết hàng giống hình ảnh mô tả,giao đúng màu đúng size khách đặt\n\nGiá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....\n\nSản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.",
+          "cate": {
+            "id": "6w41b5J",
+            "name": "Quần"
+          },
+          "quantity": 1
+        },
+        {
+          "name": "Quần thể thao nam -quần Jogger Nam",
+          "price": "239000",
+          "image": "https://res.cloudinary.com/ecma/image/upload/v1645193785/w8mmmtnejfyh2ymrgpsm.jpg",
+          "cateId": "6w41b5J",
+          "description": "UY TÍN- CHẤT LƯỢNG- GIÁ CẠNH TRANH là tiêu chí hàng đầu tại shop\n\nChất liệu thun Umi co giãn 4 chiều, không bai , không xù, mặc cực kì thoải mái và dễ chịu.\n\nPhom dáng trẻ trung năng động phù hợp đi chơi, hoạt động thể thao hay du lịch,cực kì dễ phối đồ.\n\n- Quần gồm 3 túi: 2 túi trước và 1 túi sau nên mặc cực kì tiện dụng.\n\nĐủ sz từ 48-83kg\n\n- HOÀN TIÊN 100% NẾU KO ĐÚNG MẪU\n\n- ĐỔI MỚI HOÀN TOÀN DO LỖI NHÀ SẢN XUẤT\n\nUY TÍN TẠO NÊN THÀNH CÔÚC QUÝ KHÁCH CÓ 1 TRẢI NGHIỆM MUA SẮM VUI VẺ.\n\nGiá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....\n\nSản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.",
+          "id": "cQoBRF5",
+          "cate": {
+            "id": "6w41b5J",
+            "name": "Quần"
+          },
+          "quantity": 1
+        },
+        {
+          "total": "388.000 ₫"
+        }
+      ],
+      "id": 1
     },
     {
-      "createdAt": "2022-02-10T01:41:23.470Z",
-      "name": "Cedric Beahan",
-      "cart": [],
-      "phoneNumber": "755-599-8833 x194",
-      "address": "437 O'Conner Cliffs",
-      "id": "2"
+      "name": "hhhh",
+      "phonenumber": "0384676544848",
+      "address": "rrrrfff",
+      "email": "tty@gmail.com",
+      "cart": [
+        {
+          "id": "An8AbGm",
+          "name": "Quần jogger nam túi hộp chất kaki ",
+          "price": "149000",
+          "cateId": "6w41b5J",
+          "image": "https://res.cloudinary.com/ecma/image/upload/v1645192271/pjxj0et153tpafxulctr.jpg",
+          "description": "Quần đũi nam form Slimfif hot 2020 madein Việt Nam\n\nChất liệu: Vải đũi lụa co giãn, mặc mát và thoáng.\n\n- Thiết kế: cạp pha chun có khuy cài co giãn tốt thoải mái khi vận động có đỉa để đeo thắt lưng,2 túi trước,1 túi sau, ống xuông đơn giản năng động.\n\n- Chất vải đũi nhẹ,thoáng mát,dễ giặt,nhanh khô,bền màu\n\n- Kiểu dáng: Form slimfit ôm gọn mặc đứng dáng, khỏe khoắn, mặc lên form, dễ phối đồ.\n\n- Màu sắc: Đen,Chì,Xanh Than,Xanh Rêu,Ghi Sáng\n\n- Size: M - 3XL từ(46 - 88kg)\n\nM từ 46 - 56kg\n\nL 57 - 64kg\n\nXL 65 - 72kg\n\n2XL 73 - 80kg\n\n3XL 81 - 88kg\n\nShop cam kết hàng giống hình ảnh mô tả,giao đúng màu đúng size khách đặt\n\nGiá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....\n\nSản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.",
+          "cate": {
+            "id": "6w41b5J",
+            "name": "Quần"
+          },
+          "quantity": 1
+        },
+        {
+          "name": "Quần thể thao nam -quần Jogger Nam",
+          "price": "239000",
+          "image": "https://res.cloudinary.com/ecma/image/upload/v1645193785/w8mmmtnejfyh2ymrgpsm.jpg",
+          "cateId": "6w41b5J",
+          "description": "UY TÍN- CHẤT LƯỢNG- GIÁ CẠNH TRANH là tiêu chí hàng đầu tại shop\n\nChất liệu thun Umi co giãn 4 chiều, không bai , không xù, mặc cực kì thoải mái và dễ chịu.\n\nPhom dáng trẻ trung năng động phù hợp đi chơi, hoạt động thể thao hay du lịch,cực kì dễ phối đồ.\n\n- Quần gồm 3 túi: 2 túi trước và 1 túi sau nên mặc cực kì tiện dụng.\n\nĐủ sz từ 48-83kg\n\n- HOÀN TIÊN 100% NẾU KO ĐÚNG MẪU\n\n- ĐỔI MỚI HOÀN TOÀN DO LỖI NHÀ SẢN XUẤT\n\nUY TÍN TẠO NÊN THÀNH CÔÚC QUÝ KHÁCH CÓ 1 TRẢI NGHIỆM MUA SẮM VUI VẺ.\n\nGiá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....\n\nSản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.",
+          "id": "cQoBRF5",
+          "cate": {
+            "id": "6w41b5J",
+            "name": "Quần"
+          },
+          "quantity": 1
+        },
+        {
+          "total": "388.000 ₫"
+        }
+      ],
+      "id": 2
     },
     {
-      "createdAt": "2022-02-09T20:56:06.360Z",
-      "name": "Delia Graham",
-      "cart": [],
-      "phoneNumber": "(925) 903-6260",
-      "address": "599 Senger Isle",
-      "id": "3"
+      "name": "ggggggggggggg",
+      "phonenumber": "levu@gmail.com",
+      "address": "tty@gmail.com",
+      "email": "rrrr",
+      "cart": null,
+      "id": 3
     },
     {
-      "createdAt": "2022-02-10T09:41:25.193Z",
-      "name": "Erick Becker",
-      "cart": [],
-      "phoneNumber": "1-592-341-7518 x7955",
-      "address": "921 Dax Camp",
-      "id": "4"
+      "name": "moi then",
+      "phonenumber": "000000000000000",
+      "address": "333333333",
+      "email": "tty@gmail.com",
+      "total": 717000,
+      "cart": null,
+      "id": 4
+    },
+    {
+      "name": "Lê Vũ",
+      "phonenumber": "44444",
+      "address": "ffffff",
+      "email": "rrrr",
+      "total": 285000,
+      "cart": null,
+      "id": 5
+    },
+    {
+      "name": "eeee",
+      "phonenumber": "0220044",
+      "address": "ttyyu",
+      "email": "levu@gmail.com",
+      "total": 239000,
+      "cart": null,
+      "id": 6
+    },
+    {
+      "name": "le vu toi",
+      "phonenumber": "4444444444",
+      "address": "fffffff",
+      "email": "vu@gmail.com",
+      "total": 1164000,
+      "cart": null,
+      "id": 7
+    },
+    {
+      "name": "le vu 2",
+      "phonenumber": "levu@gmail.com",
+      "address": "gggggg",
+      "email": "tty@gmail.com",
+      "total": 1164000,
+      "cart": [
+        {
+          "id": "An8AbGm",
+          "name": "Quần jogger nam túi hộp chất kaki ",
+          "price": "149000",
+          "cateId": "6w41b5J",
+          "image": "https://res.cloudinary.com/ecma/image/upload/v1645192271/pjxj0et153tpafxulctr.jpg",
+          "description": "Quần đũi nam form Slimfif hot 2020 madein Việt Nam\n\nChất liệu: Vải đũi lụa co giãn, mặc mát và thoáng.\n\n- Thiết kế: cạp pha chun có khuy cài co giãn tốt thoải mái khi vận động có đỉa để đeo thắt lưng,2 túi trước,1 túi sau, ống xuông đơn giản năng động.\n\n- Chất vải đũi nhẹ,thoáng mát,dễ giặt,nhanh khô,bền màu\n\n- Kiểu dáng: Form slimfit ôm gọn mặc đứng dáng, khỏe khoắn, mặc lên form, dễ phối đồ.\n\n- Màu sắc: Đen,Chì,Xanh Than,Xanh Rêu,Ghi Sáng\n\n- Size: M - 3XL từ(46 - 88kg)\n\nM từ 46 - 56kg\n\nL 57 - 64kg\n\nXL 65 - 72kg\n\n2XL 73 - 80kg\n\n3XL 81 - 88kg\n\nShop cam kết hàng giống hình ảnh mô tả,giao đúng màu đúng size khách đặt\n\nGiá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....\n\nSản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.",
+          "cate": {
+            "id": "6w41b5J",
+            "name": "Quần"
+          },
+          "quantity": 3
+        },
+        {
+          "name": "Quần thể thao nam -quần Jogger Nam",
+          "price": "239000",
+          "image": "https://res.cloudinary.com/ecma/image/upload/v1645193785/w8mmmtnejfyh2ymrgpsm.jpg",
+          "cateId": "6w41b5J",
+          "description": "UY TÍN- CHẤT LƯỢNG- GIÁ CẠNH TRANH là tiêu chí hàng đầu tại shop\n\nChất liệu thun Umi co giãn 4 chiều, không bai , không xù, mặc cực kì thoải mái và dễ chịu.\n\nPhom dáng trẻ trung năng động phù hợp đi chơi, hoạt động thể thao hay du lịch,cực kì dễ phối đồ.\n\n- Quần gồm 3 túi: 2 túi trước và 1 túi sau nên mặc cực kì tiện dụng.\n\nĐủ sz từ 48-83kg\n\n- HOÀN TIÊN 100% NẾU KO ĐÚNG MẪU\n\n- ĐỔI MỚI HOÀN TOÀN DO LỖI NHÀ SẢN XUẤT\n\nUY TÍN TẠO NÊN THÀNH CÔÚC QUÝ KHÁCH CÓ 1 TRẢI NGHIỆM MUA SẮM VUI VẺ.\n\nGiá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....\n\nSản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.",
+          "id": "cQoBRF5",
+          "cate": {
+            "id": "6w41b5J",
+            "name": "Quần"
+          },
+          "quantity": 3
+        }
+      ],
+      "id": 8
     }
   ],
   "cates": [

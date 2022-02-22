@@ -17,8 +17,10 @@
     "vite": "^2.7.2"
   },
   "dependencies": {
-    "axios": "^0.25.0",
+    "axios": "^0.26.0",
     "bootbox": "^5.5.2",
+    "jquery": "^3.6.0",
+    "jquery-validation": "^1.19.3",
     "navigo": "^8.11.1",
     "sweetalert2": "^11.4.0",
     "toastr": "^2.1.4"

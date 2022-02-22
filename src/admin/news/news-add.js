@@ -1,7 +1,8 @@
 import axios from "axios";
 import Swal from 'sweetalert2'
 import { add } from "../../api/news-api"
-
+import $ from 'jquery';
+import validate from 'jquery-validation';
 const NewsAdd = {
     render() {
         return /*html*/ `
@@ -11,7 +12,7 @@ const NewsAdd = {
       <form action="" id="form-add">
         <div class="shadow sm:rounded-md sm:overflow-hidden">
           <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
-            <div class="grid grid-cols-4 gap-6">
+            <div class="">
               <div class="col-span-3 sm:col-span-2">
                 <label for="" class="block text-sm font-medium text-gray-700">
                  Tiêu đề bài viết
@@ -20,7 +21,7 @@ const NewsAdd = {
                   <span  class="inline-flex items-center px-3 rounded-l-md border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
 
                   </span>
-                  <input id="news-title" type="text" name="company-website" id="company-website" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="Ví dụ: Váy Super Idol ">
+                  <input id="news-title" type="text" name="news-title"  class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="Ví dụ: Váy Super Idol ">
                 </div>
               </div>
               <div class="col-span-3 sm:col-span-2">
@@ -31,7 +32,7 @@ const NewsAdd = {
                   <span  class="inline-flex items-center px-3 rounded-l-md border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
 
                   </span>
-                  <input id="news-author" type="text" name="company-website" id="company-website" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="Ví dụ: Váy Super Idol ">
+                  <input id="news-author" type="text" name="news-name"  class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="Ví dụ: Váy Super Idol ">
                 </div>
               </div>
               <div class="col-span-3 sm:col-span-1">
@@ -42,7 +43,7 @@ const NewsAdd = {
                   <span  class="inline-flex items-center px-3 rounded-l-md border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
 
                   </span>
-                  <input id="news-createdAt" type="date" name="company-website" id="company-website" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="Ví dụ: 100000">
+                  <input id="news-createdAt" type="date" name="company-website" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="Ví dụ: 100000">
                 </div>
               </div>
             </div>
@@ -52,7 +53,7 @@ const NewsAdd = {
               Content
               </label>
               <div class="mt-1">
-                <textarea id="news-content" name="about" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md" placeholder=""></textarea>
+                <textarea id="news-content" name="news-content" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md" placeholder=""></textarea>
               </div>
               <p class="mt-2 text-sm text-gray-500">
               
@@ -73,7 +74,7 @@ const NewsAdd = {
                   <div class="flex text-sm text-gray-600">
                     <label for="file-upload" class="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
                      
-                      <input id="news-image" name="file-upload" type="file" >
+                      <input id="news-image" name="news-thumbnail" type="file" >
                     </label>
                     <span></span>
                     <p class="pl-1">Upload a file or drag and drop</p>
@@ -86,7 +87,7 @@ const NewsAdd = {
             </div>
           </div>
           <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-            <button id="button" disabled class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-slate-600 hover:slate-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            <button id="button" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-slate-600 hover:slate-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
               Save
             </button>
           </div>
@@ -98,7 +99,43 @@ const NewsAdd = {
         `;
     },
     afterRender() {
-        const formAddNews = document.querySelector("#form-add")
+        const formAddNews = $("#form-add")
+        formAddNews.validate({
+          rules: {
+            "news-title":{
+              required : true,
+              minlength : 16
+            },
+            "news-name":{
+              required : true,
+              
+            },
+            "news-content":{
+              required : true,
+              
+            },
+            "news-thumbnail":{
+              required : true,
+            }
+          },
+          messages: {
+            "news-title":{
+              required : "Không đươc để trống tiêu đề",
+              minlength : "Độ dài tối thiểu là 16"
+            },
+            "news-name":{
+             required : "Không đươc để trống tên tác gỉa",
+              
+            },
+            "news-content":{
+              required : "Không đươc để trống nội dung",
+              
+            },
+            "news-thumbnail":{
+              required : "Không đươc để trống ảnh thumbnail",
+            }
+          }
+        });
         const newsImage = document.querySelector("#news-image")
         newsImage.addEventListener("change", (e) => {
             const file = e.target.files[0];
@@ -116,7 +153,7 @@ const NewsAdd = {
 
             .then((res) => { 
                 const button = document.querySelector("#button");
-                button.removeAttribute("disabled")
+  
                 button.classList.remove("bg-slate-600")
                 button.classList.remove("hover:slate-600")
                 button.classList.add("bg-indigo-600")

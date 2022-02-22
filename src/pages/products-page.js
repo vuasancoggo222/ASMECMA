@@ -48,7 +48,8 @@ const productsPage = {
     ${Footer.render()}
     `
     },
-  async afterRender(){
+  async afterRender(){ 
+    
     const pagging = document.querySelector('#pagging')
     const btnsCate = document.querySelectorAll('.cate')
     const container = document.querySelector('#main')
@@ -123,6 +124,9 @@ const productsPage = {
             `
             
                 })
+                return /*html*/ `
+                ${Header.afterRender()}
+                `
     })
 // 
     }

@@ -1,7 +1,8 @@
 import axios from "axios";
 import Swal from 'sweetalert2'
 import { add } from "../../api/category-api"
-
+import $ from 'jquery';
+import validate from 'jquery-validation';
 const categoryAdd = {
     render() {
         return /*html*/ `
@@ -19,7 +20,7 @@ const categoryAdd = {
                 <div class="mt-1 flex rounded-md shadow-sm">
                   <span  class="inline-flex items-center px-3 rounded-l-md border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
                   </span>
-                  <input id="category-name" type="text" name="company-website" id="company-website" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="Ví dụ: Váy Super Idol ">
+                  <input id="category-name" type="text" name="category" id="company-website" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="Ví dụ: Váy Super Idol ">
                 </div>
               </div>
           <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
@@ -35,7 +36,21 @@ const categoryAdd = {
         `;
     },
     afterRender() {
-        const formAdd = document.querySelector("#form-add")
+
+        const formAdd = $("#form-add")
+        formAdd.validate({
+          rules:{
+           "category":{
+            required: true,
+           }
+
+          },
+          messages:{
+           "category":{
+            required: "Vui lòng nhập tên danh mục"
+           }
+          }
+        })
         const categoryName = document.querySelector("#category-name")
                 formAdd.addEventListener("submit", (event) => {
                   event.preventDefault()

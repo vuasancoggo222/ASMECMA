@@ -86,7 +86,7 @@ const SignupPage ={
           password: document.querySelector("#password").value,
           isAdmin : false
         });
-        window.location.href="/#/";
+        window.location.href="/sign-in-page";
         // thông báo bạn đăng nhập thành công....
       });
     },

@@ -8,9 +8,10 @@ export const get10 = () => {
     return instance.get(url);
 }
 export const get = (id) => {
-    const url = `/products/${id}`;
+    const url = `/products/${id}?_expand=cate`;
     return instance.get(url);
 }
+
 export const getByCate = (id) => {
     const url = `products?cateId=${id}`;
     return instance.get(url);

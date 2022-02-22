@@ -13,7 +13,7 @@ import productsTable from "./admin/products/products-table";
 import newsTable from "./admin/news/news-table";
 import contactTable from "./admin/contact/contact-table";
 import usersTable from "./admin/users/users-table";
-import ordersTable from "./admin/orders-table";
+import ordersTable from "./admin/orders/orders-table";
 import categoryTable from "./admin/category/category-table";
 import productsAdd from "./admin/products/products-add"
 import NewsAdd from "./admin/news/news-add"
@@ -24,6 +24,8 @@ import categoryAdd from "./admin/category/category-add"
 import categoryEdit from "./admin/category/category-edit";
 import NewsPage from "./pages/news-page"
 import CartPage from "./pages/cart";
+import CheckOut from "./pages/checkout"
+import OrderInfo from "./pages/orders-info";
 const router = new Navigo("/", { linksSelector: "a" });
 const print = async (content, id) => {
   document.getElementById("app").innerHTML = await content.render(id);
@@ -117,6 +119,12 @@ router.on({
         },
         "/cart":()=>{
           print(CartPage)
-        }
+        },
+        "/checkout":()=>{
+          print(CheckOut)
+        },
+        "/admin/orders-detail/:id":(value) => {
+          print(OrderInfo,value.data.id);
+        },
 });
 router.resolve();

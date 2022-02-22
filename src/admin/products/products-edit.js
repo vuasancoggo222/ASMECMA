@@ -3,6 +3,8 @@ import Swal from 'sweetalert2'
 import { getAll as GetAllCategory } from "../../api/category-api";
 import { update } from "../../api/products-api"
 import { get } from "../../api/products-api"
+import $ from 'jquery';
+import validate from 'jquery-validation';
 const productsEdit = {
    async render(id) {
        const { data } = await get(id)
@@ -15,7 +17,7 @@ const productsEdit = {
       <form action="" id="form-edit">
         <div class="shadow sm:rounded-md sm:overflow-hidden">
           <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
-            <div class="grid grid-cols-4 gap-6">
+            <div class="">
               <div class="col-span-3 sm:col-span-2">
                 <label for="" class="block text-sm font-medium text-gray-700">
                  Tên sản phẩm
@@ -24,7 +26,7 @@ const productsEdit = {
                   <span  class="inline-flex items-center px-3 rounded-l-md border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
 
                   </span>
-                  <input id="product-name" value="${data.name}" type="text" name="company-website" id="company-website" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="Ví dụ: Váy Super Idol ">
+                  <input id="product-name"  value="${data.name}" type="text" name="product-name" id="company-website" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="Ví dụ: Váy Super Idol ">
                 </div>
               </div>
               <div class="col-span-3 sm:col-span-1">
@@ -35,7 +37,7 @@ const productsEdit = {
                   <span  class="inline-flex items-center px-3 rounded-l-md border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
 
                   </span>
-                  <input id="product-price" value="${data.price}" type="number" name="company-website" id="company-website" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="Ví dụ: 100000">
+                  <input id="product-price" value="${data.price}" type="number" name="product-price"  class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="Ví dụ: 100000">
                 </div>
               </div>
             </div>
@@ -56,7 +58,7 @@ const productsEdit = {
                Description
               </label>
               <div class="mt-1">
-                <textarea value="${data.description}" id="product-description" name="about" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md" placeholder=""></textarea>
+                <textarea value="${data.description}" id="product-description"  name="product-desc" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md" placeholder=""></textarea>
               </div>
               <p class="mt-2 text-sm text-gray-500">
               
@@ -77,7 +79,7 @@ const productsEdit = {
                   <div class="flex text-sm text-gray-600">
                     <label for="file-upload" class="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
                      
-                      <input value="${data.image}" id="product-image" name="file-upload" type="file" >
+                      <input value="${data.image}" id="product-image" name="product-image" type="file" >
                     </label>
                     <span></span>
                     <p class="pl-1">Upload a file or drag and drop</p>
@@ -90,7 +92,7 @@ const productsEdit = {
             </div>
           </div>
           <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-            <button id="button" disabled class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-slate-600 hover:slate-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            <button id="button" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-slate-600 hover:slate-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
               Save
             </button>
           </div>
@@ -102,7 +104,47 @@ const productsEdit = {
         `;
     },
     afterRender(id) {
-        const formEdit = document.querySelector("#form-edit")
+        const formEdit = $("#form-edit")
+        formEdit.validate({
+          rules: {
+           "product-name":{
+             required: true,
+             minlength : 3
+           },
+           "product-price":{
+             required: true,
+      
+           },
+           "product-desc":{
+             required: true,
+           },
+           "product-image":{
+             required: true,
+           },
+           "select-category":{
+             required:true,
+           }
+          },
+          messages:{
+           "product-name":{
+             required: "Không được để trống tên sản phẩm !",
+           minlength: "Nhập ít nhất 3 ký tự"
+           },
+           "product-price":{
+             required: "Không được để trống giá sản phẩm !",
+      
+           },
+           "product-desc":{
+             required: "Không được để trống mô tả sản phẩm !",
+           },
+           "product-image":{
+             required: "Không được để trống ảnh sản phẩm !",
+           },
+           "select-category":{
+             required:"Vui lòng chọn danh mục sản phẩm !"
+           }
+          }
+         })
         const productImage = document.querySelector("#product-image")
         productImage.addEventListener("change", (e) => {
             const file = e.target.files[0];
@@ -120,7 +162,6 @@ const productsEdit = {
 
             .then((res) => { 
                 const button = document.querySelector("#button");
-                button.removeAttribute("disabled")
                 button.classList.remove("bg-slate-600")
                 button.classList.remove("hover:slate-600")
                 button.classList.add("bg-indigo-600")

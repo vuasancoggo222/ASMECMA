@@ -1,5 +1,5 @@
-import dashboardUI from "../components/dashboardUI";
-import { getAll } from "../api/orders-api";
+import dashboardUI from "../../components/dashboardUI";
+import { getAll } from "../../api/orders-api";
 const ordersTable = {
   async render() {
     const { data } = await getAll();
@@ -17,6 +17,9 @@ const ordersTable = {
                                 </th>
                                 <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
                                     Số Điện Thoại
+                            </th>
+                            <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                                   Email
                             </th>
                              <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
                           Địa Chỉ
@@ -41,17 +44,20 @@ const ordersTable = {
                     </td>
                    
                     <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    <div class="text-sm text-gray-900"><h3 class="my-3"><a href="" class="font-semibold text-lg text-orange-500">${order.phoneNumber}</a></h3> </div>
+                    <div class="text-sm text-gray-900"><h3 class="my-3"><a href="" class="font-semibold text-lg text-orange-500">${order.phonenumber}</a></h3> </div>
                     
                     </td>
                     <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     <div class="text-sm text-gray-900"><h3 class="my-3"><a href="" class="font-semibold text-lg text-orange-500">${order.address}</a></h3> </div>
                     </td>
                     <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    <div class="text-sm text-gray-900"><h3 class="my-3"><a href="" class="font-semibold text-lg text-orange-500">${order.cart}</a></h3> </div>
+                    <div class="text-sm text-gray-900"><h3 class="my-3"><a href="" class="font-semibold text-lg text-orange-500">${order.email}</a></h3> </div>
                     
                     </td>
-                
+                    <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <div class="text-sm text-gray-900"><h3 class="my-3"><a href="/admin/orders-detail/${order.id}" class="font-semibold text-lg text-orange-500">Xem chi tiết</a></h3> </div>
+                    
+                    </td>
                     <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     <a href="/admin/orders-table/${order.id}/edit" class="text-indigo-600 hover:text-indigo-900">Xác Nhận Đơn Hàng</a>
                     </td>
