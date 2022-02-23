@@ -4,6 +4,7 @@ import { update } from "../../api/news-api"
 import { get } from "../../api/news-api"
 import $ from 'jquery';
 import validate from 'jquery-validation';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 const newsEdit = {
    async render(id) {
        const { data } = await get(id)
@@ -138,6 +139,20 @@ const newsEdit = {
             }
           }
         });
+        ClassicEditor
+        .create( document.querySelector( '#news-content' ), {
+            toolbar: [ 'heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote' ],
+            heading: {
+                options: [
+                    { model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
+                    { model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
+                    { model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' }
+                ]
+            }
+        } )
+        .catch( error => {
+            console.log( error );
+        } );
         const newsImage = document.querySelector("#news-image")
         newsImage.addEventListener("change", (e) => {
             const file = e.target.files[0];

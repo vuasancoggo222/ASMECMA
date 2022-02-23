@@ -25,7 +25,8 @@ import categoryEdit from "./admin/category/category-edit";
 import NewsPage from "./pages/news-page"
 import CartPage from "./pages/cart";
 import CheckOut from "./pages/checkout"
-import OrderInfo from "./pages/orders-info";
+import OrderInfo from "./admin/orders/orders-info"
+import orderSuccess from "./pages/orderSuccess"
 const router = new Navigo("/", { linksSelector: "a" });
 const print = async (content, id) => {
   document.getElementById("app").innerHTML = await content.render(id);
@@ -126,5 +127,9 @@ router.on({
         "/admin/orders-detail/:id":(value) => {
           print(OrderInfo,value.data.id);
         },
+        "/order-success":()=> {
+          print(orderSuccess)
+        }
+
 });
 router.resolve();

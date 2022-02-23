@@ -169,126 +169,6 @@
   ],
   "orders": [
     {
-      "name": "Lê Vũ",
-      "phonenumber": "0384765490",
-      "address": "tuyen quang",
-      "email": "levu@gmail.com",
-      "cart": [
-        {
-          "id": "An8AbGm",
-          "name": "Quần jogger nam túi hộp chất kaki ",
-          "price": "149000",
-          "cateId": "6w41b5J",
-          "image": "https://res.cloudinary.com/ecma/image/upload/v1645192271/pjxj0et153tpafxulctr.jpg",
-          "description": "Quần đũi nam form Slimfif hot 2020 madein Việt Nam\n\nChất liệu: Vải đũi lụa co giãn, mặc mát và thoáng.\n\n- Thiết kế: cạp pha chun có khuy cài co giãn tốt thoải mái khi vận động có đỉa để đeo thắt lưng,2 túi trước,1 túi sau, ống xuông đơn giản năng động.\n\n- Chất vải đũi nhẹ,thoáng mát,dễ giặt,nhanh khô,bền màu\n\n- Kiểu dáng: Form slimfit ôm gọn mặc đứng dáng, khỏe khoắn, mặc lên form, dễ phối đồ.\n\n- Màu sắc: Đen,Chì,Xanh Than,Xanh Rêu,Ghi Sáng\n\n- Size: M - 3XL từ(46 - 88kg)\n\nM từ 46 - 56kg\n\nL 57 - 64kg\n\nXL 65 - 72kg\n\n2XL 73 - 80kg\n\n3XL 81 - 88kg\n\nShop cam kết hàng giống hình ảnh mô tả,giao đúng màu đúng size khách đặt\n\nGiá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....\n\nSản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.",
-          "cate": {
-            "id": "6w41b5J",
-            "name": "Quần"
-          },
-          "quantity": 1
-        },
-        {
-          "name": "Quần thể thao nam -quần Jogger Nam",
-          "price": "239000",
-          "image": "https://res.cloudinary.com/ecma/image/upload/v1645193785/w8mmmtnejfyh2ymrgpsm.jpg",
-          "cateId": "6w41b5J",
-          "description": "UY TÍN- CHẤT LƯỢNG- GIÁ CẠNH TRANH là tiêu chí hàng đầu tại shop\n\nChất liệu thun Umi co giãn 4 chiều, không bai , không xù, mặc cực kì thoải mái và dễ chịu.\n\nPhom dáng trẻ trung năng động phù hợp đi chơi, hoạt động thể thao hay du lịch,cực kì dễ phối đồ.\n\n- Quần gồm 3 túi: 2 túi trước và 1 túi sau nên mặc cực kì tiện dụng.\n\nĐủ sz từ 48-83kg\n\n- HOÀN TIÊN 100% NẾU KO ĐÚNG MẪU\n\n- ĐỔI MỚI HOÀN TOÀN DO LỖI NHÀ SẢN XUẤT\n\nUY TÍN TẠO NÊN THÀNH CÔÚC QUÝ KHÁCH CÓ 1 TRẢI NGHIỆM MUA SẮM VUI VẺ.\n\nGiá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....\n\nSản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.",
-          "id": "cQoBRF5",
-          "cate": {
-            "id": "6w41b5J",
-            "name": "Quần"
-          },
-          "quantity": 1
-        },
-        {
-          "total": "388.000 ₫"
-        }
-      ],
-      "id": 1
-    },
-    {
-      "name": "hhhh",
-      "phonenumber": "0384676544848",
-      "address": "rrrrfff",
-      "email": "tty@gmail.com",
-      "cart": [
-        {
-          "id": "An8AbGm",
-          "name": "Quần jogger nam túi hộp chất kaki ",
-          "price": "149000",
-          "cateId": "6w41b5J",
-          "image": "https://res.cloudinary.com/ecma/image/upload/v1645192271/pjxj0et153tpafxulctr.jpg",
-          "description": "Quần đũi nam form Slimfif hot 2020 madein Việt Nam\n\nChất liệu: Vải đũi lụa co giãn, mặc mát và thoáng.\n\n- Thiết kế: cạp pha chun có khuy cài co giãn tốt thoải mái khi vận động có đỉa để đeo thắt lưng,2 túi trước,1 túi sau, ống xuông đơn giản năng động.\n\n- Chất vải đũi nhẹ,thoáng mát,dễ giặt,nhanh khô,bền màu\n\n- Kiểu dáng: Form slimfit ôm gọn mặc đứng dáng, khỏe khoắn, mặc lên form, dễ phối đồ.\n\n- Màu sắc: Đen,Chì,Xanh Than,Xanh Rêu,Ghi Sáng\n\n- Size: M - 3XL từ(46 - 88kg)\n\nM từ 46 - 56kg\n\nL 57 - 64kg\n\nXL 65 - 72kg\n\n2XL 73 - 80kg\n\n3XL 81 - 88kg\n\nShop cam kết hàng giống hình ảnh mô tả,giao đúng màu đúng size khách đặt\n\nGiá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....\n\nSản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.",
-          "cate": {
-            "id": "6w41b5J",
-            "name": "Quần"
-          },
-          "quantity": 1
-        },
-        {
-          "name": "Quần thể thao nam -quần Jogger Nam",
-          "price": "239000",
-          "image": "https://res.cloudinary.com/ecma/image/upload/v1645193785/w8mmmtnejfyh2ymrgpsm.jpg",
-          "cateId": "6w41b5J",
-          "description": "UY TÍN- CHẤT LƯỢNG- GIÁ CẠNH TRANH là tiêu chí hàng đầu tại shop\n\nChất liệu thun Umi co giãn 4 chiều, không bai , không xù, mặc cực kì thoải mái và dễ chịu.\n\nPhom dáng trẻ trung năng động phù hợp đi chơi, hoạt động thể thao hay du lịch,cực kì dễ phối đồ.\n\n- Quần gồm 3 túi: 2 túi trước và 1 túi sau nên mặc cực kì tiện dụng.\n\nĐủ sz từ 48-83kg\n\n- HOÀN TIÊN 100% NẾU KO ĐÚNG MẪU\n\n- ĐỔI MỚI HOÀN TOÀN DO LỖI NHÀ SẢN XUẤT\n\nUY TÍN TẠO NÊN THÀNH CÔÚC QUÝ KHÁCH CÓ 1 TRẢI NGHIỆM MUA SẮM VUI VẺ.\n\nGiá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....\n\nSản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.",
-          "id": "cQoBRF5",
-          "cate": {
-            "id": "6w41b5J",
-            "name": "Quần"
-          },
-          "quantity": 1
-        },
-        {
-          "total": "388.000 ₫"
-        }
-      ],
-      "id": 2
-    },
-    {
-      "name": "ggggggggggggg",
-      "phonenumber": "levu@gmail.com",
-      "address": "tty@gmail.com",
-      "email": "rrrr",
-      "cart": null,
-      "id": 3
-    },
-    {
-      "name": "moi then",
-      "phonenumber": "000000000000000",
-      "address": "333333333",
-      "email": "tty@gmail.com",
-      "total": 717000,
-      "cart": null,
-      "id": 4
-    },
-    {
-      "name": "Lê Vũ",
-      "phonenumber": "44444",
-      "address": "ffffff",
-      "email": "rrrr",
-      "total": 285000,
-      "cart": null,
-      "id": 5
-    },
-    {
-      "name": "eeee",
-      "phonenumber": "0220044",
-      "address": "ttyyu",
-      "email": "levu@gmail.com",
-      "total": 239000,
-      "cart": null,
-      "id": 6
-    },
-    {
-      "name": "le vu toi",
-      "phonenumber": "4444444444",
-      "address": "fffffff",
-      "email": "vu@gmail.com",
-      "total": 1164000,
-      "cart": null,
-      "id": 7
-    },
-    {
       "name": "le vu 2",
       "phonenumber": "levu@gmail.com",
       "address": "gggggg",
@@ -323,6 +203,114 @@
         }
       ],
       "id": 8
+    },
+    {
+      "name": "ABC",
+      "phonenumber": "0384765490",
+      "address": "tuyen quang",
+      "email": "vu2@gmail.com",
+      "total": 668000,
+      "cart": [
+        {
+          "name": "Quần thể thao nam -quần Jogger Nam",
+          "price": "239000",
+          "image": "https://res.cloudinary.com/ecma/image/upload/v1645193785/w8mmmtnejfyh2ymrgpsm.jpg",
+          "cateId": "6w41b5J",
+          "description": "UY TÍN- CHẤT LƯỢNG- GIÁ CẠNH TRANH là tiêu chí hàng đầu tại shop\n\nChất liệu thun Umi co giãn 4 chiều, không bai , không xù, mặc cực kì thoải mái và dễ chịu.\n\nPhom dáng trẻ trung năng động phù hợp đi chơi, hoạt động thể thao hay du lịch,cực kì dễ phối đồ.\n\n- Quần gồm 3 túi: 2 túi trước và 1 túi sau nên mặc cực kì tiện dụng.\n\nĐủ sz từ 48-83kg\n\n- HOÀN TIÊN 100% NẾU KO ĐÚNG MẪU\n\n- ĐỔI MỚI HOÀN TOÀN DO LỖI NHÀ SẢN XUẤT\n\nUY TÍN TẠO NÊN THÀNH CÔÚC QUÝ KHÁCH CÓ 1 TRẢI NGHIỆM MUA SẮM VUI VẺ.\n\nGiá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....\n\nSản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.",
+          "id": "cQoBRF5",
+          "cate": {
+            "id": "6w41b5J",
+            "name": "Quần"
+          },
+          "quantity": 2
+        },
+        {
+          "name": "Quần Jocker ống rộng bo gót in hình Heroes",
+          "price": "95000",
+          "image": "https://res.cloudinary.com/ecma/image/upload/v1645193579/hepo1fejkcfwe3tnypfm.jpg",
+          "cateId": "6w41b5J",
+          "description": "* THÔNG TIN SẢN PHẨM:\n\nQuần Jogger nỉ ống thụng được thiết kế đơn giản nhưng khỏe khoắn, cá tính và năng động. Đường may sắc sảo, đẹp mắt, tỉ mỉ trong từng chi tiết thể hiện được đẳng cấp của sản phẩm. Dễ dàng kết hợp với các loại trang phục như áo thun, áo khoác bomber, áo ba lỗ,…để có được một set đồ đẹp và phong cách.\n\n- Chất liệu thun nỉ, co dãn tốt, thoáng mát, không nhăn, không nhàu\n\n- Form rộng (thụng) phong cách Hiphop thể thao khỏe khoắn, thoải mái vận động trong mọi hoạt động hàng ngày\n\n- Đường may sắc sảo, đẹp mắt, tỉ mỉ trong từng chi tiết\n\n- Hai bên sống quần chạy dọc các đường chỉ 5 màu tạo điểm nhấn cho sản phẩm\n\n- Sản phẩm được thiết kế phong cách street style, cả nam và nữ mặc đều hợp\n\n-----------------------\n\nM: dưới 55kg, cao dưới 1m65\n\nL: dưới 65kg, cao dưới 1m70\n\n-----------------------\n\n️ HƯỚNG DẪN SỬ DỤNG\n\n️ Giặt ở nhiệt độ bình thường, với đồ có màu tương tự.\n\n️ Không được dùng hóa chất tẩy.\n\n️ Hạn chế sử dụng máy sấy và ủi ở nhiệt độ thích hợp.\n\n️ Lộn mặt trái khi phơi tránh bị phai màu\n\n-----------------------\n\nCam kết sản phẩm chất lượng y hình 100%.\n\nLuôn có giá tốt nhất, đáng tiền.\n\nTư vấn tận tâm, chi tiết nhất với khách hàng.\n\nHỗ trợ đổi/trả miễn phí nếu khách hàng không hài lòng với sản phẩm & dịch vụ tại shop.\n\n-----------------------\n\nH͟Ư͟Ớ͟N͟G͟ ͟D͟Ẫ͟N͟ ͟C͟Á͟C͟H͟ ͟Đ͟Ặ͟T͟ ͟H͟À͟N͟G͟:\n\nNếu bạn hài lòng về sản phẩm và thái độ phục vụ của shop, hãy ủng hộ shop bằng những đánh giá 5*, Shop xin chân thành cảm ơn và gửi tặng bạn voucher giảm giá cho lần mua hàng sau nhé.\n\n——————————————————\n\nGiá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....",
+          "id": "QPiMr7W",
+          "cate": {
+            "id": "6w41b5J",
+            "name": "Quần"
+          },
+          "quantity": 2
+        }
+      ],
+      "id": 9
+    },
+    {
+      "name": "Lê Vũ",
+      "phonenumber": "0396256563",
+      "address": "rrrrrr",
+      "email": "123@gmail.com",
+      "total": 668000,
+      "cart": [
+        {
+          "name": "Quần thể thao nam -quần Jogger Nam",
+          "price": "239000",
+          "image": "https://res.cloudinary.com/ecma/image/upload/v1645193785/w8mmmtnejfyh2ymrgpsm.jpg",
+          "cateId": "6w41b5J",
+          "description": "UY TÍN- CHẤT LƯỢNG- GIÁ CẠNH TRANH là tiêu chí hàng đầu tại shop\n\nChất liệu thun Umi co giãn 4 chiều, không bai , không xù, mặc cực kì thoải mái và dễ chịu.\n\nPhom dáng trẻ trung năng động phù hợp đi chơi, hoạt động thể thao hay du lịch,cực kì dễ phối đồ.\n\n- Quần gồm 3 túi: 2 túi trước và 1 túi sau nên mặc cực kì tiện dụng.\n\nĐủ sz từ 48-83kg\n\n- HOÀN TIÊN 100% NẾU KO ĐÚNG MẪU\n\n- ĐỔI MỚI HOÀN TOÀN DO LỖI NHÀ SẢN XUẤT\n\nUY TÍN TẠO NÊN THÀNH CÔÚC QUÝ KHÁCH CÓ 1 TRẢI NGHIỆM MUA SẮM VUI VẺ.\n\nGiá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....\n\nSản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.",
+          "id": "cQoBRF5",
+          "cate": {
+            "id": "6w41b5J",
+            "name": "Quần"
+          },
+          "quantity": 2
+        },
+        {
+          "name": "Quần Jocker ống rộng bo gót in hình Heroes",
+          "price": "95000",
+          "image": "https://res.cloudinary.com/ecma/image/upload/v1645193579/hepo1fejkcfwe3tnypfm.jpg",
+          "cateId": "6w41b5J",
+          "description": "* THÔNG TIN SẢN PHẨM:\n\nQuần Jogger nỉ ống thụng được thiết kế đơn giản nhưng khỏe khoắn, cá tính và năng động. Đường may sắc sảo, đẹp mắt, tỉ mỉ trong từng chi tiết thể hiện được đẳng cấp của sản phẩm. Dễ dàng kết hợp với các loại trang phục như áo thun, áo khoác bomber, áo ba lỗ,…để có được một set đồ đẹp và phong cách.\n\n- Chất liệu thun nỉ, co dãn tốt, thoáng mát, không nhăn, không nhàu\n\n- Form rộng (thụng) phong cách Hiphop thể thao khỏe khoắn, thoải mái vận động trong mọi hoạt động hàng ngày\n\n- Đường may sắc sảo, đẹp mắt, tỉ mỉ trong từng chi tiết\n\n- Hai bên sống quần chạy dọc các đường chỉ 5 màu tạo điểm nhấn cho sản phẩm\n\n- Sản phẩm được thiết kế phong cách street style, cả nam và nữ mặc đều hợp\n\n-----------------------\n\nM: dưới 55kg, cao dưới 1m65\n\nL: dưới 65kg, cao dưới 1m70\n\n-----------------------\n\n️ HƯỚNG DẪN SỬ DỤNG\n\n️ Giặt ở nhiệt độ bình thường, với đồ có màu tương tự.\n\n️ Không được dùng hóa chất tẩy.\n\n️ Hạn chế sử dụng máy sấy và ủi ở nhiệt độ thích hợp.\n\n️ Lộn mặt trái khi phơi tránh bị phai màu\n\n-----------------------\n\nCam kết sản phẩm chất lượng y hình 100%.\n\nLuôn có giá tốt nhất, đáng tiền.\n\nTư vấn tận tâm, chi tiết nhất với khách hàng.\n\nHỗ trợ đổi/trả miễn phí nếu khách hàng không hài lòng với sản phẩm & dịch vụ tại shop.\n\n-----------------------\n\nH͟Ư͟Ớ͟N͟G͟ ͟D͟Ẫ͟N͟ ͟C͟Á͟C͟H͟ ͟Đ͟Ặ͟T͟ ͟H͟À͟N͟G͟:\n\nNếu bạn hài lòng về sản phẩm và thái độ phục vụ của shop, hãy ủng hộ shop bằng những đánh giá 5*, Shop xin chân thành cảm ơn và gửi tặng bạn voucher giảm giá cho lần mua hàng sau nhé.\n\n——————————————————\n\nGiá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....",
+          "id": "QPiMr7W",
+          "cate": {
+            "id": "6w41b5J",
+            "name": "Quần"
+          },
+          "quantity": 2
+        }
+      ],
+      "id": 10
+    },
+    {
+      "name": "LEVU23",
+      "phonenumber": "012345678",
+      "address": "vu2@gmail.com",
+      "email": "levu33@gmail.com",
+      "total": 668000,
+      "cart": [
+        {
+          "name": "Quần thể thao nam -quần Jogger Nam",
+          "price": "239000",
+          "image": "https://res.cloudinary.com/ecma/image/upload/v1645193785/w8mmmtnejfyh2ymrgpsm.jpg",
+          "cateId": "6w41b5J",
+          "description": "UY TÍN- CHẤT LƯỢNG- GIÁ CẠNH TRANH là tiêu chí hàng đầu tại shop\n\nChất liệu thun Umi co giãn 4 chiều, không bai , không xù, mặc cực kì thoải mái và dễ chịu.\n\nPhom dáng trẻ trung năng động phù hợp đi chơi, hoạt động thể thao hay du lịch,cực kì dễ phối đồ.\n\n- Quần gồm 3 túi: 2 túi trước và 1 túi sau nên mặc cực kì tiện dụng.\n\nĐủ sz từ 48-83kg\n\n- HOÀN TIÊN 100% NẾU KO ĐÚNG MẪU\n\n- ĐỔI MỚI HOÀN TOÀN DO LỖI NHÀ SẢN XUẤT\n\nUY TÍN TẠO NÊN THÀNH CÔÚC QUÝ KHÁCH CÓ 1 TRẢI NGHIỆM MUA SẮM VUI VẺ.\n\nGiá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....\n\nSản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.",
+          "id": "cQoBRF5",
+          "cate": {
+            "id": "6w41b5J",
+            "name": "Quần"
+          },
+          "quantity": 2
+        },
+        {
+          "name": "Quần Jocker ống rộng bo gót in hình Heroes",
+          "price": "95000",
+          "image": "https://res.cloudinary.com/ecma/image/upload/v1645193579/hepo1fejkcfwe3tnypfm.jpg",
+          "cateId": "6w41b5J",
+          "description": "* THÔNG TIN SẢN PHẨM:\n\nQuần Jogger nỉ ống thụng được thiết kế đơn giản nhưng khỏe khoắn, cá tính và năng động. Đường may sắc sảo, đẹp mắt, tỉ mỉ trong từng chi tiết thể hiện được đẳng cấp của sản phẩm. Dễ dàng kết hợp với các loại trang phục như áo thun, áo khoác bomber, áo ba lỗ,…để có được một set đồ đẹp và phong cách.\n\n- Chất liệu thun nỉ, co dãn tốt, thoáng mát, không nhăn, không nhàu\n\n- Form rộng (thụng) phong cách Hiphop thể thao khỏe khoắn, thoải mái vận động trong mọi hoạt động hàng ngày\n\n- Đường may sắc sảo, đẹp mắt, tỉ mỉ trong từng chi tiết\n\n- Hai bên sống quần chạy dọc các đường chỉ 5 màu tạo điểm nhấn cho sản phẩm\n\n- Sản phẩm được thiết kế phong cách street style, cả nam và nữ mặc đều hợp\n\n-----------------------\n\nM: dưới 55kg, cao dưới 1m65\n\nL: dưới 65kg, cao dưới 1m70\n\n-----------------------\n\n️ HƯỚNG DẪN SỬ DỤNG\n\n️ Giặt ở nhiệt độ bình thường, với đồ có màu tương tự.\n\n️ Không được dùng hóa chất tẩy.\n\n️ Hạn chế sử dụng máy sấy và ủi ở nhiệt độ thích hợp.\n\n️ Lộn mặt trái khi phơi tránh bị phai màu\n\n-----------------------\n\nCam kết sản phẩm chất lượng y hình 100%.\n\nLuôn có giá tốt nhất, đáng tiền.\n\nTư vấn tận tâm, chi tiết nhất với khách hàng.\n\nHỗ trợ đổi/trả miễn phí nếu khách hàng không hài lòng với sản phẩm & dịch vụ tại shop.\n\n-----------------------\n\nH͟Ư͟Ớ͟N͟G͟ ͟D͟Ẫ͟N͟ ͟C͟Á͟C͟H͟ ͟Đ͟Ặ͟T͟ ͟H͟À͟N͟G͟:\n\nNếu bạn hài lòng về sản phẩm và thái độ phục vụ của shop, hãy ủng hộ shop bằng những đánh giá 5*, Shop xin chân thành cảm ơn và gửi tặng bạn voucher giảm giá cho lần mua hàng sau nhé.\n\n——————————————————\n\nGiá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....",
+          "id": "QPiMr7W",
+          "cate": {
+            "id": "6w41b5J",
+            "name": "Quần"
+          },
+          "quantity": 2
+        }
+      ],
+      "id": 11
     }
   ],
   "cates": [

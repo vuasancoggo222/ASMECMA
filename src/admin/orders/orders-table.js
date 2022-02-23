@@ -1,5 +1,6 @@
 import dashboardUI from "../../components/dashboardUI";
 import { getAll } from "../../api/orders-api";
+import { numberFormat } from "../../components/price-format";
 const ordersTable = {
   async render() {
     const { data } = await getAll();
@@ -24,13 +25,14 @@ const ordersTable = {
                              <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
                           Địa Chỉ
                     </th>
+                    
                                 <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
                                Thông Tin Đơn Hàng
                                 </th>
-                                </th>
-                                <th colspan="2" scope="col" class=" text-center py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                              Chức năng
-                                </th>
+                                <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                                Tổng giá
+                          </th>
+                                
                             </tr>
                         </thead>
                         <tbody>
@@ -56,14 +58,11 @@ const ordersTable = {
                     </td>
                     <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     <div class="text-sm text-gray-900"><h3 class="my-3"><a href="/admin/orders-detail/${order.id}" class="font-semibold text-lg text-orange-500">Xem chi tiết</a></h3> </div>
+                    </td>
+                    <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <div class="text-sm text-gray-900"><h3 class="my-3"><a href="" class="font-semibold text-lg text-orange-500">${numberFormat.format(order.total)}</a></h3> </div>
                     
-                    </td>
-                    <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    <a href="/admin/orders-table/${order.id}/edit" class="text-indigo-600 hover:text-indigo-900">Xác Nhận Đơn Hàng</a>
-                    </td>
-                    <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    <a href="/admin/orders-table/${order.id}/delete" class="text-indigo-600 hover:text-indigo-900">Huỷ Đơn Hàng</a>
-                    </td>            
+                    </td>   
                     </tr>
                     
                     `
@@ -77,5 +76,8 @@ const ordersTable = {
     </div>
         `;
   },
+  afterRender(){
+   
+  }
 };
 export default ordersTable;

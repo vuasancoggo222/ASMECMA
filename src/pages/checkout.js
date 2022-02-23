@@ -59,9 +59,9 @@ add({
     total : JSON.parse(localStorage.getItem('total')),
     cart : cart,
 })
-.then(response => console.log(response.data))
+.then(response => localStorage.setItem('order',JSON.stringify(response.data)))
 .then(toastr.success("Đặt hàng thành công !!"))
-.then(document.location.href="/products-page")
+.then(document.location.href="/order-success")
 
 })
 
