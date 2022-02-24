@@ -3,9 +3,6 @@ import Swal from 'sweetalert2'
 import { getAll as GetAllCategory } from "../../api/category-api";
 import { update } from "../../api/products-api"
 import { get } from "../../api/products-api"
-import $ from 'jquery';
-import validate from 'jquery-validation';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 const productsEdit = {
    async render(id) {
        const { data } = await get(id)
@@ -83,7 +80,7 @@ const productsEdit = {
                       <input value="${data.image}" id="product-image" name="product-image" type="file" >
                     </label>
                     <span></span>
-                    <p class="pl-1">Upload a file or drag and drop</p>
+                    <p class="pl-1">Upload a file or drag and drop</p>umen
                   </div>
                   <p class="text-xs text-gray-500">
                     PNG, JPG, GIF up to 10MB
@@ -105,61 +102,7 @@ const productsEdit = {
         `;
     },
     afterRender(id) {
-        const formEdit = $("#form-edit")
-        formEdit.validate({
-          rules: {
-           "product-name":{
-             required: true,
-             minlength : 3
-           },
-           "product-price":{
-             required: true,
-      
-           },
-           "product-desc":{
-             required: true,
-           },
-           "product-image":{
-             required: true,
-           },
-           "select-category":{
-             required:true,
-           }
-          },
-          messages:{
-           "product-name":{
-             required: "Không được để trống tên sản phẩm !",
-           minlength: "Nhập ít nhất 3 ký tự"
-           },
-           "product-price":{
-             required: "Không được để trống giá sản phẩm !",
-      
-           },
-           "product-desc":{
-             required: "Không được để trống mô tả sản phẩm !",
-           },
-           "product-image":{
-             required: "Không được để trống ảnh sản phẩm !",
-           },
-           "select-category":{
-             required:"Vui lòng chọn danh mục sản phẩm !"
-           }
-          }
-         })
-         ClassicEditor
-         .create( document.querySelector( '#product-description' ), {
-             toolbar: [ 'heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote' ],
-             heading: {
-                 options: [
-                     { model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
-                     { model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
-                     { model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' }
-                 ]
-             }
-         } )
-         .catch( error => {
-             console.log( error );
-         } );
+        const formEdit = document.querySelector("#form-edit")
         const productImage = document.querySelector("#product-image")
         productImage.addEventListener("change", (e) => {
             const file = e.target.files[0];

@@ -2,10 +2,6 @@ import axios from "axios";
 import Swal from 'sweetalert2'
 import { add } from "../../api/products-api"
 import { getAll } from "../../api/category-api"
-import $ from 'jquery';
-import validate from 'jquery-validation';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-
 const productsAdd = {
   
      async render() {
@@ -102,62 +98,8 @@ return /*html*/ `
         `;
     },
     afterRender() {
-        const formAdd = $("#form-add")
-        const productname = $("#product-name")
-        formAdd.validate({
-         rules: {
-          "product-name":{
-            required: true,
-            minlength : 3
-          },
-          "product-price":{
-            required: true,
-     
-          },
-          "product-desc":{
-            required: true,
-          },
-          "product-image":{
-            required: true,
-          },
-          "select-category":{
-            required:true,
-          }
-         },
-         messages:{
-          "product-name":{
-            required: "Không được để trống tên sản phẩm !",
-					minlength: "Nhập ít nhất 3 ký tự"
-          },
-          "product-price":{
-            required: "Không được để trống giá sản phẩm !",
-     
-          },
-          "product-desc":{
-            required: "Không được để trống mô tả sản phẩm !",
-          },
-          "product-image":{
-            required: "Không được để trống ảnh sản phẩm !",
-          },
-          "select-category":{
-            required:"Vui lòng chọn danh mục sản phẩm !"
-          }
-         }
-        })
-        ClassicEditor
-    .create( document.querySelector( '#product-description' ), {
-        toolbar: [ 'heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote' ],
-        heading: {
-            options: [
-                { model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
-                { model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
-                { model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' }
-            ]
-        }
-    } )
-    .catch( error => {
-        console.log( error );
-    } );
+        const formAdd = document.querySelector("#form-add")
+       
         const productImage = document.querySelector("#product-image")
         productImage.addEventListener("change", (e) => {
             const file = e.target.files[0];

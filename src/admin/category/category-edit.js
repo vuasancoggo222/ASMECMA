@@ -1,8 +1,6 @@
 
 import { update } from "../../api/category-api"
 import { get } from "../../api/category-api"
-import $ from 'jquery';
-import validate from 'jquery-validation';
 const categoryEdit = {
    async render(id) {
        const { data } = await get(id)
@@ -37,19 +35,7 @@ const categoryEdit = {
                `;
     },
     afterRender(id) {
-        const formEdit = $("#form-edit")
-        formEdit.validate({
-          rules:{
-           "category":{
-            required: true,
-           }
-
-          },
-          messages:{
-           "category":{
-            required: "Vui lòng nhập tên danh mục"
-           }
-          }})
+        const formEdit = document.querySelector("#form-edit")
         const categoryName = document.querySelector("#category-name")
                 formEdit.addEventListener("submit", (event) => {
                   event.preventDefault()

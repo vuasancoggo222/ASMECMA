@@ -1,8 +1,6 @@
 import axios from "axios";
 import Swal from 'sweetalert2'
 import { add } from "../../api/category-api"
-import $ from 'jquery';
-import validate from 'jquery-validation';
 const categoryAdd = {
     render() {
         return /*html*/ `
@@ -37,20 +35,8 @@ const categoryAdd = {
     },
     afterRender() {
 
-        const formAdd = $("#form-add")
-        formAdd.validate({
-          rules:{
-           "category":{
-            required: true,
-           }
+        const formAdd = document.querySelector("#form-add")
 
-          },
-          messages:{
-           "category":{
-            required: "Vui lòng nhập tên danh mục"
-           }
-          }
-        })
         const categoryName = document.querySelector("#category-name")
                 formAdd.addEventListener("submit", (event) => {
                   event.preventDefault()
